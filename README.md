@@ -1,1 +1,2 @@
 "# maven-test" 
+run build
