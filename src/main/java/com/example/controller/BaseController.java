@@ -26,7 +26,7 @@ public class BaseController {
 	public String welcome(ModelMap model) {
 		long counterValue = BaseController.getNextCounterValue();
 
-		model.addAttribute("message", "Welcome");
+		model.addAttribute("me11ssagetest", "Welcome");
 		model.addAttribute("counter", counterValue);
 		logger.debug("[welcome] counter : {}", counterValue);
 
