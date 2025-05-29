@@ -22,7 +22,7 @@ public class BaseController {
 		return sc.getValue();
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/ydz/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
 		long counterValue = BaseController.getNextCounterValue();
 
@@ -34,7 +34,7 @@ public class BaseController {
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
+	@RequestMapping(value = "/ydz/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 		long counterValue = BaseController.getNextCounterValue();
 
