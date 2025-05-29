@@ -22,11 +22,11 @@ public class BaseController {
 		return sc.getValue();
 	}
 
-	@RequestMapping(value = "/ydz/", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
 		long counterValue = BaseController.getNextCounterValue();
 
-		model.addAttribute("me11ssagetest", "Welcome");
+		model.addAttribute("me11ssage", "Welcome");
 		model.addAttribute("counter", counterValue);
 		logger.debug("[welcome] counter : {}", counterValue);
 
@@ -34,11 +34,11 @@ public class BaseController {
 		return VIEW_INDEX;
 	}
 
-	@RequestMapping(value = "/ydz/{name}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 		long counterValue = BaseController.getNextCounterValue();
 
-		model.addAttribute("me11ssage", "Welcome " + name);
+		model.addAttribute("message", "Welcome " + name);
 		model.addAttribute("counter", counterValue);
 		logger.debug("[welcomeName] counter : {}", counterValue);
 
