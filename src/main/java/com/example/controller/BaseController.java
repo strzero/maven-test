@@ -38,7 +38,7 @@ public class BaseController {
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 		long counterValue = BaseController.getNextCounterValue();
 
-		model.addAttribute("message", "Welcome " + name);
+		model.addAttribute("me11ssage", "Welcome " + name);
 		model.addAttribute("counter", counterValue);
 		logger.debug("[welcomeName] counter : {}", counterValue);
 
